@@ -1,0 +1,8 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: outlander-copilot-endpoint
+description: Outlander Gear Co. AI Copilot - RAG-based product assistant
+auth_mode: key
+tags:
+  project: outlander-copilot
+  type: rag-chatbot
+  framework: promptflow

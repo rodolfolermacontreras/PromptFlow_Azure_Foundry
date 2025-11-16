@@ -1,0 +1,11 @@
+# Azure SDKs
+azure-ai-openai>=2.0.0
+azure-identity>=1.13.0
+openai>=1.35.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Prompt Flow
+promptflow>=1.18.0
+promptflow-core>=1.18.0

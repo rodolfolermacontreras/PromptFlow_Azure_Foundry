@@ -1,0 +1,36 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_input:
+    type: string
+    default: Which tent is the most waterproof?
+    is_chat_input: true
+  chat_history:
+    type: list
+    default: []
+    is_chat_history: true
+outputs:
+  answer:
+    type: string
+    reference: ${generate_response.output}
+    is_chat_output: true
+nodes:
+- name: search_products
+  type: python
+  source:
+    type: code
+    path: search_products.py
+  inputs:
+    query: ${inputs.chat_input}
+  use_variants: false
+- name: generate_response
+  type: python
+  source:
+    type: code
+    path: generate_response.py
+  inputs:
+    question: ${inputs.chat_input}
+    context: ${search_products.output}
+    chat_history: ${inputs.chat_history}
+  use_variants: false

@@ -1,0 +1,21 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: outlander-deployment-v1
+endpoint_name: outlander-copilot-endpoint
+model:
+  path: ./prompt_flows/outlander_copilot
+  type: custom_model
+code_configuration:
+  code: ./prompt_flows/outlander_copilot
+  scoring_script: flow.dag.yaml
+environment:
+  conda_file: ./prompt_flows/outlander_copilot/requirements.txt
+  image: mcr.microsoft.com/azureml/promptflow/promptflow-runtime:latest
+instance_type: Standard_DS3_v2
+instance_count: 1
+environment_variables:
+  AZURE_OPENAI_ENDPOINT: https://rodol-mi1txno6-northcentralus.openai.azure.com/
+  AZURE_OPENAI_API_VERSION: 2025-01-01-preview
+  AZURE_DEPLOYMENT_NAME: gpt-4o
+  AZURE_SEARCH_ENDPOINT: https://projectaisearchfree.search.windows.net
+  AZURE_SEARCH_INDEX_NAME: outlander-products-index
+  PF_DISABLE_TRACING: 'true'
