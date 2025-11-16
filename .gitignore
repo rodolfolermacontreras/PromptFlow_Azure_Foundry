@@ -68,10 +68,9 @@ screenshots/
 *.log
 logs/
 
-# Data
-data/product-info/
+# Data - Exclude generated files but keep product catalog
 *.csv
-*.json
+data/customer-info/
 !evaluation/*.jsonl
 !evaluation/*.json
 
