@@ -1,0 +1,246 @@
+{
+  "timestamp": "20251116_095158",
+  "dataset": "C:\\Training\\Udacity\\Azure_GenAI\\Project2\\evaluation\\evaluation_dataset.jsonl",
+  "total_questions": 13,
+  "average_score": 4.0,
+  "pass_rate": "53.8%",
+  "passed_cases": 7,
+  "pass_threshold": 3.5,
+  "evaluation_method": "GPT-4o LLM Judge (5 metrics: relevance, accuracy, completeness, groundedness, fluency)",
+  "results": [
+    {
+      "test_number": 1,
+      "question": "Which tent is the most waterproof?",
+      "ground_truth": "The Alpine Explorer Tent has the highest rainfly waterproof rating at 3000m",
+      "prediction": "Based on the provided information, both the **Alpine Explorer Tent** (item_number: 8) and the **SkyView 2-Person Tent** (item_number: 15) are described as \"waterproof,\" while the **TrailMaster X4 Tent** (item_number: 1) is described as \"water-resistant,\" which means it can withstand light rain but may not offer the same level of protection as the waterproof tents. \n\nTherefore, the **Alpine Explorer Tent** and **SkyView 2-Person Tent** are the most waterproof options from the ones listed. If you need specific waterproof ratings (like hydrostatic head measurements), that information isn't provided here, so I recommend checking the product manual or reaching out to the manufacturer for precise details.",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 2,
+        "completeness": 3,
+        "groundedness": 2,
+        "fluency": 5,
+        "reasoning": "The answer partially addresses the question by discussing waterproof and water-resistant tents, but it does not clearly identify the most waterproof tent as stated in the ground truth. The accuracy is low because it incorrectly equates the Alpine Explorer Tent and SkyView 2-Person Tent as equally waterproof, while the ground truth specifies the Alpine Explorer Tent as having the highest waterproof rating. The answer provides some detail but lacks the specific hydrostatic head measurement mentioned in the ground truth, reducing completeness. Groundedness is low because the answer introduces assumptions and does not rely on the provided ground truth. The fluency is excellent, as the response is clear, professional, and well-structured.",
+        "question": "Which tent is the most waterproof?",
+        "prediction": "Based on the provided information, both the **Alpine Explorer Tent** (item_number: 8) and the **SkyView 2-Person Tent** (item_number: 15) are described as \"waterproof,\" while the **TrailMaster X4 Tent..."
+      },
+      "overall_score": 3.0,
+      "status": "success"
+    },
+    {
+      "test_number": 2,
+      "question": "Which camping table holds the most weight?",
+      "ground_truth": "The Adventure Dining Table has a higher weight capacity than all of the other camping tables mentioned",
+      "prediction": "Unfortunately, the provided context does not specify the weight capacity for any of the camping tables. If you'd like, I can help you compare other features or assist with additional questions!",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 2,
+        "completeness": 2,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The answer acknowledges the lack of context and does not directly address the specific question about weight capacity, which reduces relevance. Accuracy is low because it does not provide the expected information about the Adventure Dining Table's weight capacity. Completeness is limited as the answer does not attempt to infer or provide additional helpful details. Groundedness is excellent since the response is appropriately based on the absence of context. Fluency is excellent as the response is clear, professional, and well-written.",
+        "question": "Which camping table holds the most weight?",
+        "prediction": "Unfortunately, the provided context does not specify the weight capacity for any of the camping tables. If you'd like, I can help you compare other features or assist with additional questions!"
+      },
+      "overall_score": 3.4,
+      "status": "success"
+    },
+    {
+      "test_number": 3,
+      "question": "How much do the TrailWalker Hiking Shoes cost?",
+      "ground_truth": "The TrailWalker Hiking Shoes are priced at $110",
+      "prediction": "The TrailWalker Hiking Shoes cost $110.",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer directly addresses the question, providing the exact price of the TrailWalker Hiking Shoes as stated in the ground truth. It is factually accurate, complete, and does not rely on any external or unsupported information. The response is also clear, concise, and professionally written, making it fluent and easy to understand.",
+        "question": "How much do the TrailWalker Hiking Shoes cost?",
+        "prediction": "The TrailWalker Hiking Shoes cost $110."
+      },
+      "overall_score": 5.0,
+      "status": "success"
+    },
+    {
+      "test_number": 4,
+      "question": "What is the proper care for trailwalker hiking shoes?",
+      "ground_truth": "After each use, remove any dirt or debris by brushing or wiping the shoes with a damp cloth",
+      "prediction": "I'm sorry, but the specific care instructions for the TrailWalker Hiking Shoes are not provided in the product information. However, I can offer general care tips for hiking footwear that may apply:\n\n1. **Cleaning:**\n   - Remove dirt and debris with a soft brush or damp cloth after each use.\n   - Use mild soap and water to clean the surface. Avoid harsh chemicals that can degrade the materials.\n\n2. **Drying:**\n   - Let the shoes air dry at room temperature. Avoid direct sunlight or heat sources like radiators, as they can damage the materials.\n   - Remove the insoles and let them air out separately.\n\n3. **Waterproofing:**\n   - Although the TrailWalker shoes are already waterproof, you can reapply a waterproofing spray occasionally to maintain their water resistance.\n\n4. **Storage:**\n   - Store the shoes in a cool, dry place away from direct sunlight.\n   - Use shoe trees or stuff them with newspaper to maintain their shape.\n\n5. **Inspect Regularly:**\n   - Check the soles and laces for wear and tear, and replace them as needed to ensure durability and safety.\n\nFor specific care instructions, feel free to check the product packaging or reach out to the manufacturer, TrekReady. Let me know if I can assist further!",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 4,
+        "completeness": 5,
+        "groundedness": 3,
+        "fluency": 5,
+        "reasoning": "The answer is highly relevant as it provides detailed care instructions for hiking shoes, which aligns with the question. The accuracy is slightly lower because it introduces additional steps (e.g., waterproofing and storage) not mentioned in the ground truth, which may not strictly apply to all hiking shoes. Completeness is excellent as the response covers multiple aspects of shoe care comprehensively. Groundedness is moderate since the answer goes beyond the ground truth and includes general advice not explicitly tied to the provided context. Fluency is excellent, as the response is clear, professional, and well-structured.",
+        "question": "What is the proper care for trailwalker hiking shoes?",
+        "prediction": "I'm sorry, but the specific care instructions for the TrailWalker Hiking Shoes are not provided in the product information. However, I can offer general care tips for hiking footwear that may apply:\n\n..."
+      },
+      "overall_score": 4.4,
+      "status": "success"
+    },
+    {
+      "test_number": 5,
+      "question": "What brand is the TrailMaster tent?",
+      "ground_truth": "OutdoorLiving",
+      "prediction": "The TrailMaster X4 Tent is by the brand **OutdoorLiving**.",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 4,
+        "groundedness": 3,
+        "fluency": 5,
+        "reasoning": "The answer directly addresses the question, correctly identifies the brand as OutdoorLiving, and is well-written and professional. However, it adds 'TrailMaster X4 Tent,' which is not explicitly mentioned in the ground truth, making the groundedness slightly lower. Completeness is slightly reduced as the additional detail may not be necessary without context.",
+        "question": "What brand is the TrailMaster tent?",
+        "prediction": "The TrailMaster X4 Tent is by the brand **OutdoorLiving**."
+      },
+      "overall_score": 4.4,
+      "status": "success"
+    },
+    {
+      "test_number": 6,
+      "question": "How do I carry the TrailMaster tent around?",
+      "ground_truth": "Carry bag included for convenient storage and transportation",
+      "prediction": "The TrailMaster X4 Tent comes with a **carry bag included** for convenient storage and transportation. You can easily pack the tent into the carry bag and take it with you wherever you go.",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "groundedness": 4,
+        "fluency": 5,
+        "reasoning": "The generated answer directly addresses the question, accurately states that the tent comes with a carry bag, and provides additional detail about its use, making it complete. While no explicit context was provided, the answer aligns well with the ground truth, though it slightly expands beyond it. The response is clear, professional, and well-written.",
+        "question": "How do I carry the TrailMaster tent around?",
+        "prediction": "The TrailMaster X4 Tent comes with a **carry bag included** for convenient storage and transportation. You can easily pack the tent into the carry bag and take it with you wherever you go."
+      },
+      "overall_score": 4.8,
+      "status": "success"
+    },
+    {
+      "test_number": 7,
+      "question": "What is the floor area for TrailMaster X4 Tent?",
+      "ground_truth": "80 square feet",
+      "prediction": "I'm sorry, the floor area for the TrailMaster X4 Tent is not listed in the provided information. Let me know if there's anything else you'd like to know about this product!",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 0,
+        "completeness": 2,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The answer acknowledges the question but does not provide the correct floor area, making it partially relevant (score: 3). It is factually incorrect as it does not match the ground truth (score: 0). The answer lacks sufficient detail, as it does not attempt to provide an alternative or approximate value (score: 2). It is grounded in the absence of provided context, as the chatbot does not fabricate information (score: 5). The response is clear, professional, and well-written (score: 5).",
+        "question": "What is the floor area for TrailMaster X4 Tent?",
+        "prediction": "I'm sorry, the floor area for the TrailMaster X4 Tent is not listed in the provided information. Let me know if there's anything else you'd like to know about this product!"
+      },
+      "overall_score": 3.0,
+      "status": "success"
+    },
+    {
+      "test_number": 8,
+      "question": "What is the material for TrailBlaze Hiking Pants?",
+      "ground_truth": "Made of high-quality nylon fabric",
+      "prediction": "The TrailBlaze Hiking Pants are made of high-quality nylon fabric.",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer directly addresses the question, matches the ground truth perfectly, provides sufficient detail by specifying the material, is fully grounded as no additional context was required, and is written in a clear and professional manner.",
+        "question": "What is the material for TrailBlaze Hiking Pants?",
+        "prediction": "The TrailBlaze Hiking Pants are made of high-quality nylon fabric."
+      },
+      "overall_score": 5.0,
+      "status": "success"
+    },
+    {
+      "test_number": 9,
+      "question": "What color does TrailBlaze Hiking Pants come in?",
+      "ground_truth": "Khaki",
+      "prediction": "The TrailBlaze Hiking Pants come in **khaki** color.",
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer directly addresses the question by specifying the color of the TrailBlaze Hiking Pants as 'khaki,' which matches the ground truth. It is factually correct, sufficiently detailed given the simplicity of the question, and does not rely on any external context. The response is clear, professional, and well-written.",
+        "question": "What color does TrailBlaze Hiking Pants come in?",
+        "prediction": "The TrailBlaze Hiking Pants come in **khaki** color."
+      },
+      "overall_score": 5.0,
+      "status": "success"
+    },
+    {
+      "test_number": 10,
+      "question": "Can the warranty for TrailBlaze pants be transferred?",
+      "ground_truth": "The warranty is non-transferable and applies only to the original purchaser of the TrailBlaze Hiking Pants",
+      "prediction": "I'm sorry, but the context provided does not include information about warranties or whether they can be transferred for the TrailBlaze Hiking Pants. You may want to check directly with Outlander Gear Co. or the MountainStyle brand for warranty-related details. Let me know if there's anything else I can assist you with!",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 2,
+        "completeness": 2,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer partially addresses the question by suggesting where to find warranty information but does not directly confirm or deny the transferability of the warranty, making it moderately relevant. Accuracy is low because the answer does not align with the ground truth, which explicitly states the warranty is non-transferable. Completeness is limited as the response lacks sufficient detail about the warranty itself. Groundedness is high since the answer appropriately acknowledges the lack of context and avoids making unsupported claims. Fluency is excellent, as the response is clear, professional, and well-written.",
+        "question": "Can the warranty for TrailBlaze pants be transferred?",
+        "prediction": "I'm sorry, but the context provided does not include information about warranties or whether they can be transferred for the TrailBlaze Hiking Pants. You may want to check directly with Outlander Gear..."
+      },
+      "overall_score": 3.4,
+      "status": "success"
+    },
+    {
+      "test_number": 11,
+      "question": "How long are the TrailBlaze pants under warranty for?",
+      "ground_truth": "The TrailBlaze Hiking Pants are backed by a 1-year limited warranty from the date of purchase",
+      "prediction": "I'm sorry, but the warranty information for the TrailBlaze Hiking Pants is not provided in the context. You may want to contact Outlander Gear Co. directly for warranty details. Let me know if I can assist with anything else!",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 0,
+        "completeness": 2,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer acknowledges the question but does not provide the correct warranty information, which impacts relevance and accuracy. Completeness is limited as it does not fully address the user's query. Groundedness is rated highly since the response does not fabricate information and adheres to the lack of context provided. Fluency is excellent as the response is clear, professional, and well-written.",
+        "question": "How long are the TrailBlaze pants under warranty for?",
+        "prediction": "I'm sorry, but the warranty information for the TrailBlaze Hiking Pants is not provided in the context. You may want to contact Outlander Gear Co. directly for warranty details. Let me know if I can a..."
+      },
+      "overall_score": 3.0,
+      "status": "success"
+    },
+    {
+      "test_number": 12,
+      "question": "What is the material for PowerBurner Camping Stove?",
+      "ground_truth": "Stainless Steel",
+      "prediction": "The PowerBurner Camping Stove is made with high-quality materials for long-lasting use. However, the specific material type (e.g., stainless steel, aluminum) is not mentioned in the provided information. Let me know if I can help with anything else!",
+      "evaluation": {
+        "relevance": 3,
+        "accuracy": 2,
+        "completeness": 2,
+        "groundedness": 3,
+        "fluency": 5,
+        "reasoning": "The answer partially addresses the question by discussing the material of the stove but fails to specify the correct material (stainless steel) as per the ground truth. While it acknowledges the lack of specific material information, this reduces its accuracy and completeness. The response is not grounded in any provided context but does not introduce irrelevant or fabricated details, so it scores moderately on groundedness. The fluency is excellent, as the response is clear and professional.",
+        "question": "What is the material for PowerBurner Camping Stove?",
+        "prediction": "The PowerBurner Camping Stove is made with high-quality materials for long-lasting use. However, the specific material type (e.g., stainless steel, aluminum) is not mentioned in the provided informati..."
+      },
+      "overall_score": 3.0,
+      "status": "success"
+    },
+    {
+      "test_number": 13,
+      "question": "Is France in Europe?",
+      "ground_truth": "Sorry, I can only answer queries related to outdoor/camping gear and equipment",
+      "prediction": "I'm here to assist with questions about Outlander Gear Co. products. Unfortunately, I can't provide information about geography. Let me know if you have any questions about outdoor equipment!",
+      "evaluation": {
+        "relevance": 4,
+        "accuracy": 5,
+        "completeness": 4,
+        "groundedness": 5,
+        "fluency": 5,
+        "reasoning": "The generated answer is relevant as it clarifies the chatbot's scope of assistance, though it does not directly address the question about France's location. It is accurate in stating its limitations and aligns with the ground truth. The answer is sufficiently detailed, mentioning the specific focus on Outlander Gear Co. products, but could have been slightly more concise. It is grounded in the context of the chatbot's purpose and does not stray into unrelated topics. The response is fluent, professional, and well-written.",
+        "question": "Is France in Europe?",
+        "prediction": "I'm here to assist with questions about Outlander Gear Co. products. Unfortunately, I can't provide information about geography. Let me know if you have any questions about outdoor equipment!"
+      },
+      "overall_score": 4.6,
+      "status": "success"
+    }
+  ]
+}

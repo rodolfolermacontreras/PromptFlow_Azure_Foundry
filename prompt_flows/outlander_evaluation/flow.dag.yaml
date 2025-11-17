@@ -5,11 +5,12 @@ inputs:
   question:
     type: string
     description: Customer question about outdoor gear products
-    default: "Which tent is the most waterproof?"
+    default: Which tent is the most waterproof?
   ground_truth:
     type: string
     description: Expected answer or key information
-    default: "The Alpine Explorer Tent has the highest rainfly waterproof rating at 3000mm"
+    default: The Alpine Explorer Tent has the highest rainfly waterproof rating at
+      3000mm
   context:
     type: string
     description: Retrieved product context (optional)
@@ -17,7 +18,8 @@ inputs:
   prediction:
     type: string
     description: Generated answer from the copilot
-    default: "The Alpine Explorer Tent is our most waterproof option with excellent weather protection."
+    default: The Alpine Explorer Tent is our most waterproof option with excellent
+      weather protection.
 outputs:
   evaluation_result:
     type: string
@@ -43,6 +45,7 @@ nodes:
     path: calculate_score.py
   inputs:
     evaluation_result: ${evaluate_metrics.output}
+  aggregation: true
 - name: aggregate_results
   type: python
   source:
